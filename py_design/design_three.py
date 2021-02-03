@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'design_three.ui'
+# Form implementation generated from reading ui file '/home/ts/Dev/TC/ui_files/design_three.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.2
 #
@@ -26,6 +26,9 @@ class Ui_MainWindow(object):
         self.commandLinkButton = QtWidgets.QCommandLinkButton(self.centralwidget)
         self.commandLinkButton.setGeometry(QtCore.QRect(420, 90, 141, 31))
         self.commandLinkButton.setObjectName("commandLinkButton")
+        self.commandLinkButton_2 = QtWidgets.QCommandLinkButton(self.centralwidget)
+        self.commandLinkButton_2.setGeometry(QtCore.QRect(480, 0, 91, 31))
+        self.commandLinkButton_2.setObjectName("commandLinkButton_2")
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -41,3 +44,4 @@ class Ui_MainWindow(object):
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">Это </span><span style=\" font-size:14pt; font-weight:600; font-style:italic; text-decoration: underline;\">Консоль для ручного ввода</span><span style=\" font-size:14pt;\">!</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Введите <span style=\" font-weight:600; text-decoration: underline;\">Turtle</span> комманду и программа ее исполнит!</p></body></html>"))
         self.commandLinkButton.setText(_translate("MainWindow", "Выполнить"))
+        self.commandLinkButton_2.setText(_translate("MainWindow", "Импорт"))

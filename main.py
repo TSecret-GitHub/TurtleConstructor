@@ -1,12 +1,11 @@
 from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QMessageBox
 from secondWindow import secondApp
-from turtle import *
 import sys
-import design
-import design_two
+import time
+import py_design.design
 
-class App(QtWidgets.QMainWindow, design.Ui_MainWindow):
+class App(QtWidgets.QMainWindow, py_design.design.Ui_MainWindow):
     def __init__(self, parent = None):
         super().__init__(parent)
         self.setupUi(self)
@@ -29,10 +28,14 @@ class App(QtWidgets.QMainWindow, design.Ui_MainWindow):
             self.close()
             self.twoWindow = secondApp()
             self.twoWindow.show()
+
         else:
             msg.setIcon(QMessageBox.Critical)
             msg.setText("Неправильно!")
             msg.exec_()
+            
+    def easter_egg(self):
+        pass
 
 def main():
     app = QtWidgets.QApplication(sys.argv)

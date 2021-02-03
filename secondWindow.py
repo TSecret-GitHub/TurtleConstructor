@@ -4,15 +4,14 @@ from PyQt5.QtWidgets import (QWidget, QPushButton, QLineEdit, QInputDialog, QApp
 from turtle_class import Invader
 from turtle import Screen
 from consoleWindow import consoleApp
-import traceback
 import sys
-import design_two
+import py_design.design_two
 
 invader = Invader()
 screen = Screen()
 
 
-class secondApp(QtWidgets.QMainWindow, design_two.Ui_MainWindow):
+class secondApp(QtWidgets.QMainWindow, py_design.design_two.Ui_MainWindow):
     def __init__(self, parent = None):
         super().__init__(parent)
         self.setupUi(self)
